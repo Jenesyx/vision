@@ -1,0 +1,156 @@
+.daily-holder {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-top: 26px;
+    color: #CFD3EC;
+}
+
+.daily {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #2F3349;
+    border-radius: 6px;
+}
+
+.daily .title {
+    width: 100%;
+    text-align: left;
+    font-family: Medium;
+    font-size: 22px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+.daily .date {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    width: 15%;
+    justify-content: space-evenly;
+    user-select: none;
+}
+
+.daily .date p {
+    font-family: Regular;
+}
+
+.chevron {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.daily .date .chevron img {
+    width: 100%;
+}
+
+.daily .noBodyHome {
+    letter-spacing: 10px;
+    font-family: Bold;
+    font-size: 54px;
+    position: relative;
+    display: none;
+    left: 0.1%;
+    top: 20%;
+    opacity: 0;
+}
+
+.daily .noBodyHome.highlight {
+    opacity: 0.2;
+    display: block;
+}
+
+.user-titles ul {
+    margin: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    position: relative;
+    padding: 0;
+}
+
+.user-titles ul li {
+    list-style: none;
+    font-family: Medium;
+    color: #B6BEE3;
+    font-size: 18px;
+    width: 150px;
+}
+
+.users-daily {
+    margin-top: 15px;
+    height: 65%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    border-radius: 6px;
+}
+
+.users-daily ul {
+    margin: auto;
+    display: flex;
+    width: 81.002%;
+    justify-content: space-around;
+    position: relative;
+    padding: 0;
+    left: 0.6%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.users-daily ul li {
+    list-style: none;
+    font-family: Medium;
+    color: #939AC2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    width: 200px;
+}
+
+.users-daily::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: rgba(115, 103, 240, 0.24);
+}
+
+.users-daily::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: transparent;
+}
+
+.users-daily::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(115, 103, 240, 0.48);;
+}
+
+@media only screen and (max-width: 520px) {
+    .daily-holder {
+        height: 500px;
+    }
+
+    .daily .date {
+        width: 45%;
+    }
+
+    .chevron {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .user-titles ul li {
+        font-size: 15px;
+    }
+
+    .users-daily ul li {
+        font-size: 11px;
+    }
+}

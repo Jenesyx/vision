@@ -1,0 +1,33 @@
+.nav-holder {
+    width: 100%;
+    height: 65px;
+    position: relative;
+    color: #CFD3EC;    
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    background-color: #2F3349;
+    border-radius: 6px;
+}
+
+.nav .user {
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    font-family: Regular;
+    width: 14%;
+}
+
+.nav .welcome {
+    font-size: 20px;
+    font-family: SemiBold;
+    width: 70%;
+    text-align: center;
+}
+
+.nav-mobile {
+    display: none;
+}

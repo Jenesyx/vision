@@ -1,0 +1,120 @@
+.left {
+    width: 16%;
+    height: 100%;
+    position: relative;
+}
+
+.content-holder {
+    padding: 16px 145px;
+    width: 86%;
+    height: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 520px) {
+    body {
+        max-width: 440px;
+        margin: auto;
+    }
+
+    .hamb {
+        display: block;
+        position: absolute;
+        left: 5%;
+        top: 3%;
+        width: 32px;
+        height: 32px;
+        background-color: #2F3349;
+        border-radius: 6px;
+        padding: 8px;
+        z-index: 999;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .hamb:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.4);
+    }
+    
+    .hamb img {
+        width: 100%;
+    }
+
+    .hamb.highlight {
+        display: none;
+    }
+
+    .left {
+        z-index: 9999;
+        width: 0%;
+    }
+
+    .left.highlight {
+        width: 100%;
+    }
+
+    .content-holder {
+        margin: auto;
+        width: 100%;
+        padding: 20px 0;
+    }
+    
+    .sidebar {
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .left.highlight .sidebar {
+        transform: translateX(0);
+    }
+
+    .nav {
+        background-color: transparent !important;
+    }
+    
+    .nav-holder{
+        margin: auto;
+        width: 90% !important;
+        height: 100px;
+    }
+    
+    .welcome p:nth-child(2) {
+        display: none;
+    }
+    
+    .welcome {
+        width: 100% !important;
+    }
+    
+    .user {
+        display: none;
+    }
+    
+    .nav-mobile {
+        display: block !important;
+    }
+
+    .close-hamb {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        width: 32px;
+        height: 32px;
+        background-color: #2F3349;
+        border-radius: 6px;
+        padding: 8px;
+        z-index: 9999;
+        cursor: pointer;
+        transform: translateX(0);
+    }
+
+    .close-hamb.highlight {
+        display: none;
+    }
+
+    .close-hamb img {
+        width: 100%;
+    }
+}

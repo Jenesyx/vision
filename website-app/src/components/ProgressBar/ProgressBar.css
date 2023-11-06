@@ -1,0 +1,26 @@
+.circular-progress-bar {
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+transform: rotate(-90deg);
+}
+
+.circle-background {
+    transition: stroke-dashoffset 0.35s;
+}
+
+.circle-progress {
+    transition: stroke-dashoffset 0.35s;
+}
+
+.percentage {
+    font-family: Regular;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}

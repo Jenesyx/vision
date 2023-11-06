@@ -1,0 +1,80 @@
+.status-holder {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 26px;
+    color: #CFD3EC;
+}
+
+.status {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #2F3349;
+    border-radius: 6px;
+    display: block;
+}
+
+.status .title {
+    width: 100%;
+    text-align: left;
+    font-family: Medium;
+    font-size: 22px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+.user-status {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.status-number {
+    display: flex;
+    width: 55%;
+    justify-content: space-evenly;
+    margin-top: 55px;
+}
+
+.status-number .h4 {
+    font-family: Medium;
+    font-size: 23px;
+    margin: 0;
+}
+
+.status-number p {
+    font-family: SemiBold;
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.status-circle {
+    width: 45%;
+}
+
+@media only screen and (max-width: 520px) {
+    .status-holder {
+        height: 400px;
+    }
+    .user-status {
+        display: block;
+    }
+
+    .status-number {
+        width: 100%;
+    }
+
+    .status-circle {
+        width: 100%;
+    }
+
+    .status-number .h4 {
+        font-size: 19px;
+    }
+    
+    .status-number p {
+        font-size: 24px;
+    }
+}
